@@ -168,6 +168,7 @@ input {
 }
 .bn_ind{
     width: 100%;
+    text-align: center;
 }
 h2{
   text-align: left;
