@@ -5,6 +5,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: #dcddf7;
 }
 a{
   text-decoration: none;
@@ -13,7 +14,7 @@ a{
 .cable {
   width: 100%;
   height: 100px;
-  background-color: rgb(13, 13, 115);
+  background-color: #34429e;
 }
 
 input {
@@ -24,7 +25,7 @@ input {
   background-color: #ffffff;
   border: solid (1, 1, 1) 1.5px;
   border-radius: 20px;
-  background-image: url(img/64673.png);
+  background-image: url(img/64673);
   background-size: 20px;
   background-repeat: no-repeat;
   background-position: top 5px right 10px;
@@ -84,7 +85,7 @@ input {
   margin-left: 170px;
   position: absolute;
   top: 100px;
-  background-color: rgb(13, 13, 115);
+  background-color: #34429e;
   width: 130px;
 }
 
@@ -101,8 +102,12 @@ input {
   width: 65%;
   height: 400px;
   float: left;
+  font-family: "Roboto", sans-serif; 
+  text-align: justify;
 }
-
+.notícia01 img{
+  text-align: center;
+}
 .notícia02 {
   margin: 3px, solid black;
   background-color: rgb(255, 255, 255);
@@ -111,7 +116,8 @@ input {
   width: 25%;
   height: 400px;
   float: left;
-
+  font-family: "Roboto", sans-serif; 
+  text-align: justify;
 }
 
 .notícia02 img{
@@ -126,7 +132,8 @@ input {
     width: 92%;
     height: 400px;
     float: left;
-  
+    font-family: "Roboto", sans-serif; 
+    text-align: justify;
   }
 
 .clear {
@@ -137,7 +144,7 @@ input {
   margin-top: 10px;
   padding-top: 20px;
   height: 330px;
-  background-color: rgb(13, 13, 115);
+  background-color: #34429e;
 }
 
 .roda .down_up {
