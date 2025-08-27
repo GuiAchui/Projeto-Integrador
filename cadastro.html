@@ -8,16 +8,195 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="Estilo/styleIntegrador.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="Estilo/styleIntegrador.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="Estilo/style.css" media="screen" />
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
+        .cartão {
+            display: block
+        }
+
+        .menu {
+            background-color: #000D45;
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+
+        .menu:hover {
+            color: #94a3e6;
+        }
+
+        .menu2 {
+            font-style: bold;
+            padding-right: 100px;
+        }
+
+        .rod {
+            background-color: #000D45;
+            font-family: "Oswald", sans-serif;
+            color: white;
+        }
+
+        .rod h3,
+        .rod h5,
+        .rod p,
+        .rod a {
+            color: #fff !important;
+        }
+
+        .btn.btn-outline-success {
+            color: #fff;
+            border-color: #fff;
+            background-color: transparent;
+        }
+
+        .btn.btn-outline-success:hover {
+            background-color: #fff;
+            color: #000D45;
+            border-color: #fff;
+        }
+
+        .cartão {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .imagem {
+            padding-top: 30px;
+            padding-left: 15px;
+
+        }
+
+        .imagem2 {
+            padding-top: 50px;
+            padding-left: 15px;
+
+        }
+
+        .imagem1 {
+            padding-top: 20px;
+            padding-left: 15px;
+        }
+
+        .card.w-100 {
+            height: 350px;
+        }
+
+        .card.w-100 .carousel,
+        .card.w-100 .carousel-inner,
+        .card.w-100 .carousel-item,
+        .card.w-100 .carousel img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .linha {
+            width: 750px;
+            margin-left: 250px;
+            margin-right: 0;
+            border-top: 1.5px black solid;
+        }
+
+        .carousel-inner img {
+            transition: transform 0.4s, box-shadow 0.4s;
+        }
+
+        .carousel-inner img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+        }
+
+        .titulo {
+            color: #000D45;
+        }
+
+        .banner {
+            margin-left: 350px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .banner:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+        }
+
+        .card.mb-3 {
+            max-width: 100%;
+            margin-left: 0;
+        }
+
+        @media (min-width: 992px) {
+            .card.mb-3 {
+                max-width: 540px;
+                margin-left: 250px;
+            }
+
+            .linha {
+                width: 750px;
+                margin-left: 250px;
+            }
+
+            .banner {
+                margin-left: 350px;
+                width: 750px;
+                height: 100px;
+            }
+
+        }
+
+        @media (max-width: 991px) {
+            .linha {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            .banner {
+                margin-left: 0;
+                width: 100%;
+                height: auto;
+                max-width: 100%;
+            }
+
+            .mx-auto {
+                width: 100% !important;
+                margin: 20px 0 20px 0 !important;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .mx-auto {
+                width: 100% !important;
+                margin: 10px 0 10px 0 !important;
+            }
+
+            .banner {
+                width: 100%;
+                height: auto;
+                margin-left: 0;
+                max-width: 100%;
+            }
+
+            .card.mb-3 {
+                margin-left: 0;
+                max-width: 100%;
+            }
+
+            .linha {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
     </style>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+<body style="background-color: #435ccc;">
+    <nav class="navbar navbar-expand-lg " style="background-color: #000D45;">
         <div class="container-fluid">
-            <a class="navbar-brand title" href="index.html">Esporte Total</a>
+            <a class="navbar-brand title menu menu2" href="index.html">
+                <h1>Esporte Total</h1>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,32 +204,59 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="futebol.html" id="futebolDropdown" role="button"
+                        <a class="nav-link dropdown-toggle menu" href="futebol.html" id="futebolDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Futebol
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="futebolDropdown">
-                            <li><a class="dropdown-item" href="brasileirão.html">Brasileirão</a></li>
-                            <li><a class="dropdown-item" href="champions.html">Champions League</a></li>
-                            <li><a class="dropdown-item" href="copa.html">Copa do Mundo</a></li>
+                        <ul class="dropdown-menu menu" aria-labelledby="futebolDropdown">
+                            <li><a class="dropdown-item menu" href="brasileirão.html">Brasileirão</a></li>
+                            <li><a class="dropdown-item menu" href="champions.html">Champions League</a></li>
+                            <li><a class="dropdown-item menu" href="copa.html">Copa do Mundo</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="basquete.html">Basquete</a>
+                        <a class="nav-link menu" href="basquete.html">Basquete</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+                        <a class="nav-link menu" href="cadastro.html">Cadastre-se</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search">
+                <form class="d-flex menu" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-outline-success " type="submit">Search</button>
                 </form>
             </div>
         </div>
     </nav>
-        <!--Fim do menu-->
+    <!--menu acaba aqui-->
+    <!--Formulário-->
 
+    <div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+        <form class="border rounded p-4 shadow " style="max-width: 400px; width: 100%; background-color: #000D45; color: white;">
+            <h2 class="mb-4 text-center">Acesso</h2>
+            <div class="mb-3">
+                <label for="inputEmail" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu e-mail" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputSenha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="inputSenha" placeholder="Digite sua senha" required>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="aceiteTermos" required>
+                <label class="form-check-label" for="aceiteTermos">
+                    Aceito os <a href="#">termos de uso</a>
+                </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Entrar</button>
+            <script>
+                document.querySelector('.btn.btn-primary.w-100').onclick = function() {
+                    alert('Bem-vindo ao Esporte Total!');
+                };
+            </script>
+        </form>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>

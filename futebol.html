@@ -10,14 +10,60 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="Estilo/styleIntegrador.css" media="screen" />
     <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-    </style>
+    .cartão {
+      display: block
+    }
+
+    .menu {
+      background-color: #000D45;
+      font-family: "Oswald", sans-serif;
+      color: white;
+    }
+
+    .menu:hover {
+      color: #94a3e6;
+    }
+
+    .menu2 {
+      font-style: bold;
+      padding-right: 100px;
+    }
+
+    .rod {
+      background-color: #000D45;
+      font-family: "Oswald", sans-serif;
+      color: white;
+    }
+
+    .rod h3,
+    .rod h5,
+    .rod p,
+    .rod a {
+      color: #fff !important;
+    }
+
+    .btn.btn-outline-success {
+      color: #fff;
+      border-color: #fff;
+      background-color: transparent;
+    }
+
+    .btn.btn-outline-success:hover {
+      background-color: #fff;
+      color: #000D45;
+      border-color: #fff;
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+  <nav class="navbar navbar-expand-lg " style="background-color: #000D45;">
     <div class="container-fluid">
-      <a class="navbar-brand title" href="index.html">Esporte Total</a>
+      <a class="navbar-brand title menu menu2" href="index.html">
+        <h1>Esporte Total</h1>
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -25,137 +71,46 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="futebol.html" id="futebolDropdown" role="button"
+            <a class="nav-link dropdown-toggle menu" href="futebol.html" id="futebolDropdown" role="button"
               data-bs-toggle="dropdown" aria-expanded="false">
               Futebol
             </a>
-            <ul class="dropdown-menu" aria-labelledby="futebolDropdown">
-              <li><a class="dropdown-item" href="brasileirão.html">Brasileirão</a></li>
-              <li><a class="dropdown-item" href="champions.html">Champions League</a></li>
-              <li><a class="dropdown-item" href="copa.html">Copa do Mundo</a></li>
+            <ul class="dropdown-menu menu" aria-labelledby="futebolDropdown">
+              <li><a class="dropdown-item menu" href="brasileirão.html">Brasileirão</a></li>
+              <li><a class="dropdown-item menu" href="champions.html">Champions League</a></li>
+              <li><a class="dropdown-item menu" href="copa.html">Copa do Mundo</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="basquete.html">Basquete</a>
+            <a class="nav-link menu" href="basquete.html">Basquete</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cadastro.html">Cadastre-se</a>
+            <a class="nav-link menu" href="cadastro.html">Cadastre-se</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
+        <form class="d-flex menu" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success " type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
   <!--menu acaba aqui-->
-  <!--começo do carrosel-->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-        aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-        aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-        aria-label="Slide 3"></button>
+  <div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="..." class="img-fluid rounded-start" alt="...">
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/ancelotti.avif" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Ancelotti é o novo treinador da seleção</h5>
-          <p>O italiano chegou nessa segunda-feira para comandar a seleção.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="img/curry.avif" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Stephen Curry bate recorde de pontos em uma única partida</h5>
-          <p>Na última quinta, Curry atingiu a marca de 70 pontos em uma partida.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="img/jordan.avif" class="d-block w-100" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Jordan confirmado na NBA</h5>
-          <p>Michael Jordan foi confirmado na equipe de narração da NBA.</p>
-        </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Próximo</span>
-    </button>
   </div>
-  <!--fim do carrosel-->
-  <!--começo dos cards-->
-  <div class="row row-cols-1 row-cols-md-2 g-4 mt-5">
-    <div class="col">
-      <div class="card">
-        <img src="img/curry.avif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/ancelotti.avif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/jordan.avif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content.</p>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="img/alberto.avif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-            content. This content is a little bit longer.</p>
-        </div>
-      </div>
-    </div>
-    <!--rodapé-->
-    <footer class="bg-light text-center mt-5 rod">
-      <div class="container p-4">
-        <h3 class="mb-3">Esporte Total</h3>
-        <h5 class="mb-4 text-muted">Acompanhe as novidades do mundo esportivo</h5>
-        <div class="mb-4 d-flex justify-content-center">
-          <a href="https://instagram.com" target="_blank" class="mx-3 text-dark fs-3">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a href="https://facebook.com" target="_blank" class="mx-3 text-dark fs-3">
-            <i class="bi bi-facebook"></i>
-          </a>
-          <a href="https://wa.me/" target="_blank" class="mx-3 text-dark fs-3">
-            <i class="bi bi-whatsapp"></i>
-          </a>
-        </div>
-        <p class="text-muted">© 2025 Esporte Total. Todos os direitos reservados.</p>
-      </div>
-    </footer>
-    <!--fim do rodapé-->
-  </div>
+</div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>

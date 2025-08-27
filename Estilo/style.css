@@ -1,188 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap');
-
-body,
-html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #dcddf7;
-}
-a{
-  text-decoration: none;
-  color: white;
-}
-.cable {
-  width: 100%;
-  height: 100px;
-  background-color: #34429e;
-}
-
-input {
-  width: 20%;
-  height: 30px;
-  font-size: 10px;
-  margin-bottom: 10px;
-  background-color: #ffffff;
-  border: solid (1, 1, 1) 1.5px;
-  border-radius: 20px;
-  background-image: url(img/64673);
-  background-size: 20px;
-  background-repeat: no-repeat;
-  background-position: top 5px right 10px;
-  margin-top: 30px;
-  margin-right: 20px;
-  float: right;
-
-}
-
-.logo {
-  float: left;
-  text-indent: 20px;
-  width: 20px;
-  margin-right: 20px;
-}
-
-.logo img {
-  width: 90px;
-  height: 90px;
-}
-
-.cable ul {
-  float: left;
-  width: 60%;
-  margin: 0px 0px 0px 00px;
-  line-height: 100px;
-  text-align: center;
-
-}
-
-.cable ul li {
-  text-decoration: none;
-  display: inline;
-  padding: 20px;
-  color: rgb(255, 255, 255);
-  font-family: "Poetsen One", sans-serif;
-  font-size: 1.5em;
-  cursor: pointer;
-}
-
-.cable ul li:hover {
-  color: rgb(164, 156, 245);
-}
-.cable ul li a:hover {
-  color: rgb(164, 156, 245);
-}
 
 
-.cable ul li:hover>ul {
-  display: block;
-  font-size: 0.5em;
 
-}
 
-.cable ul ul {
-  display: none;
-  margin-left: 170px;
-  position: absolute;
-  top: 100px;
-  background-color: #34429e;
-  width: 130px;
+@keyframes spin {
+    to{
+        transform: rotate(0deg);
+    }
+    from{
+        transform: rotate(360deg)
+    }
 }
 
-.cable ul ul li {
-  display: block;
-  margin-left: -60px;
+.botao{
+    height: 40px;
+    width: 350px;
+    background-color: #000D45;
+    border-radius: 0.25rem;
+    border-style: none;
+    padding: 8px;
 }
-
-.notícia01 {
-  margin: 3px, solid black;
-  background-color: rgb(255, 255, 255);
-  padding: 5px;
-  margin: 50px 20px;
-  width: 65%;
-  height: 400px;
-  float: left;
-  font-family: "Roboto", sans-serif; 
-  text-align: justify;
-}
-.notícia01 img{
-  text-align: center;
-}
-.notícia02 {
-  margin: 3px, solid black;
-  background-color: rgb(255, 255, 255);
-  padding: 5px;
-  margin: 50px 20px;
-  width: 25%;
-  height: 400px;
-  float: left;
-  font-family: "Roboto", sans-serif; 
-  text-align: justify;
-}
-
-.notícia02 img{
-  margin-left: 15px;
-}
-
-.notícia03 {
-    margin: 3px, solid black;
-    background-color: rgb(255, 255, 255);
-    padding: 5px;
-    margin: 50px 20px;
-    width: 92%;
-    height: 400px;
-    float: left;
-    font-family: "Roboto", sans-serif; 
-    text-align: justify;
-  }
-
-.clear {
-  clear: both;
-}
-
-.roda {
-  margin-top: 10px;
-  padding-top: 20px;
-  height: 330px;
-  background-color: #34429e;
-}
-
-.roda .down_up {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-family: "Poetsen One", sans-serif;
-  font-size: 4em;
-}
-
-.roda .down_meio {
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-family: "Poetsen One", sans-serif;
-  font-size: 1, 5em;
-}
-
-.roda .down_down {
-  text-align: center;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-family: "Poetsen One", sans-serif;
-  font-size: 1, 5em;
-}
-
-.roda .down_down img {
-  width: 40px;
-  border-radius: 25px;
-  border: 4px rgb(255, 255, 255) dotted;
-  cursor: pointer;
-  margin: 20px;
-  padding: 5px;
-}
-.bn_ind{
-    width: 100%;
-    text-align: center;
-}
-h2{
-  text-align: left;
-  color: darkslateblue;
-  font-family: "Poetsen One", sans-serif;
+.loading-spin{
+    width: 24px;
+    height: 24px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-bottom-color: transparent;
+    margin-left: 160px;
+    animation: spin 1s linear infinite; 
 }
