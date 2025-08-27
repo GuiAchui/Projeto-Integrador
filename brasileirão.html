@@ -4,11 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Brasileirão</title>
+  <title>BRASILEIRÃO</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poetsen+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="Estilo/styleIntegrador.css" media="screen" />
+  <link rel="icon" href="img/bandeira-do-brasil.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
@@ -91,8 +93,8 @@
 
     .linha {
       width: 750px;
-      margin-left: 250px;
-      margin-right: 0;
+      margin-left: 350px;
+      margin-right: 0px;
       border-top: 1.5px black solid;
     }
 
@@ -133,8 +135,8 @@
       }
 
       .linha {
-        width: 750px;
-        margin-left: 250px;
+        width: 550px;
+        margin-left: 425px;
       }
 
       .banner {
@@ -187,6 +189,11 @@
         margin-left: 0;
       }
     }
+
+    .card {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+      border: none;
+    }
   </style>
 </head>
 
@@ -234,24 +241,25 @@
       style="width: 100%;">
       <div class="carousel-inner rounded" style="width: 100%; height: 420px;">
         <div class="carousel-item active">
-          <img src="img/juan.jfif" class="d-block w-100" alt="Imagem 1" style="height: 420px; object-fit: cover;">
+          <img src="img/banner - palmeiras.png" class="d-block w-100" alt="Imagem 1"
+            style="height: 420px; object-fit: cover;">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Santos anuncia Vojvoda</h5>
-            <p>Juan Pablo Vojvoda é o novo técnico do Santos.</p>
+            <h5>PALMEIRAS</h5>
+            <p>O clube paulista é campeão do Brasileirão.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/diniz.webp" class="d-block w-100" alt="Imagem 2" style="height: 420px; object-fit: cover;">
+          <img src="img/Diniz.png" class="d-block w-100" alt="Imagem 2" style="height: 420px; object-fit: cover;">
           <div class="carousel-caption d-none d-md-block">
             <h5>Diniz comenta derrota do Vasco</h5>
             <p>Postura do time foi criticada após derrota para o Juventude.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="img/champions.webp" class="d-block w-100" alt="Imagem 3" style="height: 420px; object-fit: cover;">
+          <img src="img/VEXAME!!!!.png" class="d-block w-100" alt="Imagem 3" style="height: 420px; object-fit: cover;">
           <div class="carousel-caption d-none d-md-block">
-            <h5>Champions League</h5>
-            <p>Novas regras para as oitavas de final da competição.</p>
+            <h5>SANTOS</h5>
+            <p>O clube paulista toma goleada do Vasco.</p>
           </div>
         </div>
       </div>
@@ -266,11 +274,21 @@
     </div>
   </div>
   <!--Fim do carrossel-->
-  <img class="banner" src="img/banner.png" width="750px" height="100px">
-  <!--Começo dos cards-->
+  <iframe src="img/BANNER-GIF.html" width="750px" height="100px" style="margin-left:350px ;"></iframe>
+
   <br><br>
+
+  <div id="anuncio-esquerdo" class="d-none d-lg-block position-absolute"
+    style="top: 720px; left: 50px; width: 260px; height: 1220px;">
+    <div class="card w-100 h-100 d-flex flex-column justify-content-center align-items-center p-0" style="height:100%;">
+      <!-- GIF ocupa todo o anúncio -->
+      <iframe src="img/GIF.html" width="100%" height="100%" style="border:none; display:block;"
+        title="GIF Anúncio"></iframe>
+    </div>
+  </div>
+  <!--Começo dos cards-->
   <!--primeiro card-->
-  <div class="card mb-3" style="max-width: 540px; margin-left: 250px;">
+  <div class="card mb-3" style="max-width: 540px; margin-left: 425px;">
     <div class="row g-0">
       <div class="col-md-4 ">
         <img src="img/juan.jfif" class="img-fluid rounded-start" alt="..." height="200px">
@@ -280,7 +298,7 @@
           <h5 class="card-title titulo">Santos acerta a contratação de Vojvoda e prepara anúncio do técnico</h5>
           <p class="card-text cartão">O Santos tem tudo acertado para que Juan Pablo Vojvoda seja anunciado ainda nesta
             quinta-feira (21) como substituto de Cléber Xavier.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-muted">Atualizado agora a pouco...</small></p>
         </div>
       </div>
     </div>
@@ -288,7 +306,7 @@
   <hr class="linha">
   <!--fim do primeiro card-->
   <!--segundo card-->
-  <div class="card mb-3" style="max-width: 540px; margin-left: 250px;">
+  <div class="card mb-3" style="max-width: 540px; margin-left: 425px;">
     <div class="row g-0">
       <div class="col-md-4 imagem1">
         <img src="img/diniz.webp" class="img-fluid rounded-start" alt="...">
@@ -301,7 +319,7 @@
           <p class="card-text cartão">Técnico do Vasco, Fernando Diniz criticou a postura do time na derrota por 2 a 0
             para o
             Juventude, nesta quarta-feira (20), em jogo atrasado do Brasileirão.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-muted">Atualizado há 1 hora...</small></p>
         </div>
       </div>
     </div>
@@ -309,7 +327,7 @@
   <hr class="linha">
   <!--fim do segundo card-->
   <!--terceiro card-->
-  <div class="card mb-3" style="max-width: 540px; margin-left: 250px;">
+  <div class="card mb-3" style="max-width: 540px; margin-left: 425px;">
     <div class="row g-0">
       <div class="col-md-4">
         <img src="img/nene.jpg" class="img-fluid rounded-start" alt="...">
@@ -319,7 +337,7 @@
           <h5 class="card-title titulo">Nenê marca, e Vasco perde para Juventude em jogo atrasado do Brasileirão</h5>
           <p class="card-text cartão">Time carioca comete pênalti relâmpago e não consegue aproveitar momento após
             goleada sobre Santos.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-muted">Atualizado há 10 horas...</small></p>
         </div>
       </div>
     </div>
@@ -327,7 +345,7 @@
   <hr class="linha">
   <!--fim do terceiro card-->
   <!--quarto card-->
-  <div class="card mb-3" style="max-width: 540px; margin-left: 250px;">
+  <div class="card mb-3" style="max-width: 540px; margin-left: 425px;">
     <div class="row g-0">
       <div class="col-md-4 ">
         <img src="img/ficha-jogo-5.webp" class="img-fluid rounded-start" alt="...">
@@ -337,7 +355,7 @@
           <h5 class="card-title titulo">Brasileirão: veja chances de rebaixamento de Santos e Vasco após goleada.</h5>
           <p class="card-text cartão">Cariocas golearam o Peixe no MorumBIS por 6 a 0 neste domingo (17), pela 20ª
             rodada.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-muted">Atualizado há 15 horas</small></p>
         </div>
       </div>
     </div>
@@ -345,7 +363,7 @@
   <hr class="linha">
   <!--fim do quarto card-->
   <!--quinto card-->
-  <div class="card mb-3" style="max-width: 540px; margin-left: 250px;">
+  <div class="card mb-3" style="max-width: 540px; margin-left: 425px;">
     <div class="row g-0">
       <div class="col-md-4 imagem">
         <img src="img/flu.webp" class="img-fluid rounded-start" alt="...">
@@ -355,7 +373,7 @@
           <h5 class="card-title titulo">Fluminense tem duelo decisivo no Brasileirão para voltar a sonhar com G4.</h5>
           <p class="card-text cartão">O Fluminense vive um momento importante para se recolocar na disputa do
             Brasileirão.</p>
-          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <p class="card-text"><small class="text-muted">Atualizado há 15 horas...</small></p>
         </div>
       </div>
     </div>
@@ -364,7 +382,7 @@
   <!--fim do quinto card-->
   <!--fim dos cards-->
   <div id="anuncio-vertical" class="position-absolute d-none d-lg-block"
-    style="top: 720px; right: 250px; width: 260px; height: 400px;">
+    style="top: 720px; right: 150px; width: 260px; height: 400px;">
     <div class="d-flex flex-column align-items-center gap-4 position-relative">
 
       <!-- Botão de fechar -->
@@ -398,7 +416,7 @@
   </div>
   <!--- FIM DO PRIMEIRO ANÚNCIO-->
   <div id="anuncio-vertical" class="position-absolute d-none d-lg-block"
-    style="top: 1120px; right: 250px; width: 260px; height: 400px;">
+    style="top: 1120px; right: 150px; width: 260px; height: 400px;">
     <div class="d-flex flex-column align-items-center gap-4 position-relative">
 
       <!-- Botão de fechar -->
@@ -422,42 +440,44 @@
                 </div>
               </div>
               <h6 class="card-title mb-1" style="padding-left: 20px; text-align: center;">Baixe o app do Cartola!</h6>
-              <p class="card-text small" style="padding-left: 20px; text-align: center;">É só acessar a loja de apps do seu celular;</p>
+              <p class="card-text small" style="padding-left: 20px; text-align: center;">É só acessar a loja de apps do
+                seu celular;</p>
             </div>
           </div>
         </div>
     </div>
   </div>
-    </a>
+  </a>
   <!-- FIM DO SEGUNDO ANÚNCIO-->
   <div id="anuncio-vertical" class="position-absolute d-none d-lg-block"
-    style="top: 1540px; right: 250px; width: 260px; height: 400px;">
+    style="top: 1540px; right: 150px; width: 260px; height: 400px;">
     <div class="d-flex flex-column align-items-center gap-4 position-relative">
 
       <!-- Botão de fechar -->
       <button type="button" class="btn-close position-absolute" aria-label="Fechar"
         style="top: 10px; right: 10px; z-index: 10;"
         onclick="document.getElementById('anuncio-vertical').style.display='none'"></button>
-      <a href="https://www.nike.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=Google_Search_NIKE-INST-ROAS&gad_source=1&gad_campaignid=17563577644&gbraid=0AAAAADob9lP8IeE_fQr1ZXVX_h9HblPor&gclid=Cj0KCQjwzaXFBhDlARIsAFPv-u82mjNvxK0oEOQJftQ4qGH4psz8gkQ1t0kzYha-CtYIJgnF75bzjMwaAiYVEALw_wcB&utm_referrer=https://www.google.com/">
-      <div class="card-body p-2">
-        <div class="card w-100">
-          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/tênis.png" class="d-block w-100" alt="...">
+      <a
+        href="https://www.nike.com.br/?utm_source=google&utm_medium=cpc&utm_campaign=Google_Search_NIKE-INST-ROAS&gad_source=1&gad_campaignid=17563577644&gbraid=0AAAAADob9lP8IeE_fQr1ZXVX_h9HblPor&gclid=Cj0KCQjwzaXFBhDlARIsAFPv-u82mjNvxK0oEOQJftQ4qGH4psz8gkQ1t0kzYha-CtYIJgnF75bzjMwaAiYVEALw_wcB&utm_referrer=https://www.google.com/">
+        <div class="card-body p-2">
+          <div class="card w-100">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/tênis.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/air.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="img/rosa.png" class="d-block w-100" alt="...">
+                </div>
               </div>
-              <div class="carousel-item">
-                <img src="img/air.png" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="img/rosa.png" class="d-block w-100" alt="...">
-              </div>
+              <h6 class="card-title mb-1" style="padding-left: 20px;">Promoção Imperdível!</h6>
+              <p class="card-text small" style="padding-left: 20px;">Confira os descontos.</p>
             </div>
-            <h6 class="card-title mb-1" style="padding-left: 20px;">Promoção Imperdível!</h6>
-            <p class="card-text small" style="padding-left: 20px;">Confira os descontos.</p>
           </div>
         </div>
-      </div>
     </div>
   </div>
   </a>
