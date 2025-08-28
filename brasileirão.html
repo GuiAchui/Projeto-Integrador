@@ -22,7 +22,7 @@
       background-color: #000D45;
       font-family: "Oswald", sans-serif;
       color: white;
-    }
+    }   
 
     .menu:hover {
       color: #94a3e6;
@@ -131,7 +131,7 @@
     @media (min-width: 992px) {
       .card.mb-3 {
         max-width: 540px;
-        margin-left: 250px;
+        margin-left: 425px;
       }
 
       .linha {
@@ -152,6 +152,9 @@
         width: 100%;
         margin-left: 0;
       }
+      .animado{
+        display: none;
+      }
 
       .banner {
         margin-left: 0;
@@ -164,12 +167,21 @@
         width: 100% !important;
         margin: 20px 0 20px 0 !important;
       }
+      .card.mb-3 {
+        margin-left: 0;
+        width: 100%;
+
+      }
     }
 
     @media (max-width: 767px) {
       .mx-auto {
         width: 100% !important;
-        margin: 10px 0 10px 0 !important;
+        margin: 10px 0 10px 0 ;
+      }
+      .animado{
+        display: none;
+
       }
 
       .banner {
@@ -181,7 +193,9 @@
 
       .card.mb-3 {
         margin-left: 0;
-        max-width: 100%;
+        width: 100%;
+
+
       }
 
       .linha {
@@ -193,6 +207,17 @@
     .card {
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
       border: none;
+    }
+
+    .carousel-inner img,
+    .card img,
+    .img-fluid {
+      filter: brightness(1, 5);
+    }
+
+    .carousel-inner {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 1.5px 0 #fff inset;
+      border-radius: 12px;
     }
   </style>
 </head>
@@ -274,7 +299,7 @@
     </div>
   </div>
   <!--Fim do carrossel-->
-  <iframe src="img/BANNER-GIF.html" width="750px" height="100px" style="margin-left:350px ;"></iframe>
+  <iframe class="animado" src="img/BANNER-GIF.html" width="750px" height="100px" style="margin-left:350px ;"></iframe>
 
   <br><br>
 
@@ -282,13 +307,13 @@
     style="top: 720px; left: 50px; width: 260px; height: 1220px;">
     <div class="card w-100 h-100 d-flex flex-column justify-content-center align-items-center p-0" style="height:100%;">
       <!-- GIF ocupa todo o anúncio -->
-      <iframe src="img/GIF.html" width="100%" height="100%" style="border:none; display:block;"
+      <iframe class="animado" src="img/GIF.html" width="100%" height="100%" style="border:none; display:block;"
         title="GIF Anúncio"></iframe>
     </div>
   </div>
   <!--Começo dos cards-->
   <!--primeiro card-->
-  <div class="card mb-3" style="max-width: 540px; margin-left: 425px;">
+  <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4 ">
         <img src="img/juan.jfif" class="img-fluid rounded-start" alt="..." height="200px">
@@ -306,7 +331,7 @@
   <hr class="linha">
   <!--fim do primeiro card-->
   <!--segundo card-->
-  <div class="card mb-3" style="max-width: 540px; margin-left: 425px;">
+  <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4 imagem1">
         <img src="img/diniz.webp" class="img-fluid rounded-start" alt="...">
@@ -327,7 +352,7 @@
   <hr class="linha">
   <!--fim do segundo card-->
   <!--terceiro card-->
-  <div class="card mb-3" style="max-width: 540px; margin-left: 425px;">
+  <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4">
         <img src="img/nene.jpg" class="img-fluid rounded-start" alt="...">
@@ -345,7 +370,7 @@
   <hr class="linha">
   <!--fim do terceiro card-->
   <!--quarto card-->
-  <div class="card mb-3" style="max-width: 540px; margin-left: 425px;">
+  <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4 ">
         <img src="img/ficha-jogo-5.webp" class="img-fluid rounded-start" alt="...">
@@ -363,7 +388,7 @@
   <hr class="linha">
   <!--fim do quarto card-->
   <!--quinto card-->
-  <div class="card mb-3" style="max-width: 540px; margin-left: 425px;">
+  <div class="card mb-3" style="max-width: 540px;">
     <div class="row g-0">
       <div class="col-md-4 imagem">
         <img src="img/flu.webp" class="img-fluid rounded-start" alt="...">
